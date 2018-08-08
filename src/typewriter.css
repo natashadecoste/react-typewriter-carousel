@@ -1,0 +1,39 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.typewriter-wrapper {
+  display: inline-flex;
+  /* position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%); */
+}
+
+.typewriter {
+  display: inline;
+  font-size: inherit;
+  white-space: pre-wrap; 
+}
+
+.ios-chat { 
+  border: 2px solid black;
+  border-radius: 1.5em;
+  
+  background: linear-gradient(#ACC8EB, white);
+  padding: .5em .8em;
+
+}
+.typewriter:after {
+    content: "|";
+    animation: blinky 1.5s ease-in-out 0s infinite;  
+}
+
+@keyframes blinky {
+    0% { opacity : 0 }
+    50% { opacity: 1 }
+    100%{ opacity: 0 }
+}

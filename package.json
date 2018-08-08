@@ -2,15 +2,22 @@
   "name": "typewriter",
   "version": "1.0.0",
   "description": "A react component that functions as a carousel with text, looping through strings and typing it out.",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "webpack-dev-server --mode development",
-    "clean": "rm -rf /node_modules && npm install"
+    "clean": "rm -rf /node_modules && npm install",
+    "transpile": "babel src -d dist --copy-files",
+    "prepublishOnly": "npm run transpile"
   },
   "author": "Natasha DeCoste",
   "license": "ISC",
+  "peerDependencies": {
+    "react": "^16.3.0",
+    "react-dom": "^16.3.0"
+  },
   "devDependencies": {
+    "babel-cli": "^6.26.0",
     "babel-core": "^6.26.3",
     "babel-loader": "^7.1.4",
     "babel-polyfill": "^6.26.0",
@@ -18,6 +25,7 @@
     "babel-preset-es2015": "^6.24.1",
     "babel-preset-react": "^6.24.1",
     "babel-preset-stage-0": "^6.24.1",
+    "classnames": "^2.2.6",
     "css-loader": "^0.28.11",
     "html-webpack-plugin": "^3.2.0",
     "proptypes": "^1.1.0",

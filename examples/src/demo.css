@@ -1,0 +1,118 @@
+.title-header {
+    height: 20vh;
+    background-color: #E3E3E3;
+    color: black;
+    padding: 20px;
+
+}
+
+.title-header h1 {
+    font-size: 32px;
+    text-align: left;
+}
+
+.title-header p {
+    font-style: italic;
+    font-size: 20px;
+}
+
+.title-header links {
+    
+}
+
+.about-block {
+    margin: 20px;
+    background: rgb(245, 245, 245);
+    padding: 10px;
+    line-height: 1.5em;
+}
+
+.demo-container {
+    margin: 40px 20px;
+    padding: 20px;
+    border: 1px solid gray;
+    height: 300px;
+    overflow: scroll;
+    font-size: 32px;
+}
+
+.typewriter-wrapper {
+
+}
+
+.style-input {
+    padding: 15px;
+    display: inline-flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.style-input > * {
+    margin: 0 8px;
+}
+.toggle {
+    cursor: pointer;
+    border-radius: 50%;
+    min-width: 25px;
+    min-height: 25px;
+    border: 1px solid lightgrey;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: 0 1px;
+    background-color: white;
+    box-shadow: 0 1px 2px 1px lightgrey;
+  }
+  
+  .inactive {
+    animation: slideback .2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+  }
+  .active {
+    box-shadow: 0 1px 2px 1px darkgreen;
+    border: none;
+    animation: slide .2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+  }
+  
+  .container {
+    cursor: pointer;
+    position: relative;
+    width: 50px;
+    height: 20px;
+    background-color: white;
+    border-radius: 23px;
+    border: 1px solid lightgrey;
+}
+
+.on {
+    background-color: lightgreen;
+    border: 1px solid lightgreen;
+  }
+  
+  @keyframes slide {
+    0% { 
+    }
+    50%{
+      left: 10px;
+    }
+    100% {
+      left: 22px;
+    }
+  }
+  
+  @keyframes slideback {
+    0% { left:22px;
+    }
+    50%{
+      left: 10px;
+    }
+    100% {
+       
+    }
+  }
+  
