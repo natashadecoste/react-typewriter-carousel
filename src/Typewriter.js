@@ -99,13 +99,15 @@ export class Typewriter extends React.Component {
 Typewriter.propTypes = {
     data: PropTypes.arrayOf(PropTypes.string).isRequired,
     width: PropTypes.string,
-    typeSpeed: PropTypes.number
+    typeSpeed: PropTypes.number,
+    chatStyle:  PropTypes.bool
 };
 
 Typewriter.defaultProps = {
     data: null,
     width: "100%",
-    typeSpeed: 100
+    typeSpeed: 100,
+    chatStyle: false
 };
     
 
