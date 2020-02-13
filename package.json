@@ -1,6 +1,6 @@
 {
   "name": "react-type-carousel",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "repository": "https://github.com/natashadecoste/react-typewriter-carousel",
   "description": "A react component that functions as a carousel with text, looping through strings and typing it out.",
   "main": "dist/index.js",
