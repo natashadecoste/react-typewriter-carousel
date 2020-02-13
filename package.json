@@ -1,13 +1,13 @@
 {
   "name": "react-type-carousel",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "repository": "https://github.com/natashadecoste/react-typewriter-carousel",
   "description": "A react component that functions as a carousel with text, looping through strings and typing it out.",
   "main": "dist/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "webpack-dev-server --mode development",
-    "clean": "rm -rf /node_modules && rm -rf dist && npm install",
+    "clean": "rm -rf node_modules && rm -rf dist && yarn",
     "transpile": "babel src -d dist --copy-files",
     "prepublishOnly": "npm run transpile"
   },
@@ -27,7 +27,7 @@
     "babel-preset-react": "^6.24.1",
     "babel-preset-stage-0": "^6.24.1",
     "classnames": "^2.2.6",
-    "css-loader": "^0.28.11",
+    "css-loader": "3.4.2",
     "html-webpack-plugin": "^3.2.0",
     "proptypes": "^1.1.0",
     "react": "^16.4.0",
